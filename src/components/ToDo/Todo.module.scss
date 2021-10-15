@@ -1,0 +1,14 @@
+.todoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  min-height: 300px;
+  border: 2px solid;
+  background-color: aqua;
+  font-family: sans-serif;
+}
+.totoHeading {
+  font-weight: 700;
+  margin: 20px 0;
+}
