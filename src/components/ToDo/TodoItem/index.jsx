@@ -9,15 +9,28 @@ const TodoItem = ({ id, body, status, todos, setTodos }) => {
     return setTodos(deleteTasks);
   };
 
-  const toggleCompletion = () => {
-    const newStatus = todos.map((task) => (task.status = !task.status));
+  const toggleCompletion = (id) => {
+    const newStatus = todos.map((task) => {
+      const newTask = {
+        ...task,
+        status: task.id === id ? !task.status : task.status,
+      };
+      return newTask;
+    });
 
     return setTodos(newStatus);
   };
 
   return (
-    <li className={styles.tasksWrapper}>
-      <div className={styles.tasksContainer} onClick={() => toggleCompletion()}>
+    <li
+      className={`${styles.tasksWrapper} ${
+        status && `${styles.tasksWrapperTrue} `
+      }`}
+    >
+      <div
+        className={styles.tasksContainer}
+        onClick={() => toggleCompletion(id)}
+      >
         {/* <img className={screen} src={toggle} alt="" /> */}
         <p>{body}</p>
       </div>
