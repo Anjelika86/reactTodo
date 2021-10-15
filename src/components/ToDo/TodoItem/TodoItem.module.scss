@@ -1,0 +1,23 @@
+.imgWrapper {
+  width: 30px;
+}
+.imgDelete {
+  display: block;
+  width: 100%;
+}
+.tasksWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+.tasksContainer {
+  // display: flex;
+
+  // align-items: center;
+  min-width: 220px;
+}
+.toggleIsvisible {
+  text-decoration: line-through;
+  visibility: hidden;
+}
