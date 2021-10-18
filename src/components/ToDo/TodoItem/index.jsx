@@ -1,6 +1,4 @@
 import deleteBtn from "./../../../image/delete.png";
-import toggle from "./../../../image/toggle.png";
-
 import styles from "./TodoItem.module.scss";
 
 const TodoItem = ({ id, body, status, todos, setTodos }) => {
@@ -31,10 +29,10 @@ const TodoItem = ({ id, body, status, todos, setTodos }) => {
         className={styles.tasksContainer}
         onClick={() => toggleCompletion(id)}
       >
-        {/* <img className={screen} src={toggle} alt="" /> */}
-        <p>{body}</p>
+        {" "}
+        <input className={styles.checkbox} type="checkbox" cheked={status} />
+        <p className={styles.overflowContainer}>{body}</p>
       </div>
-      {/* <input type="checkbox" cheked={status} /> */}
 
       <div className={styles.imgWrapper} onClick={() => deleteTask(id)}>
         <img className={styles.imgDelete} src={deleteBtn} alt="" />
