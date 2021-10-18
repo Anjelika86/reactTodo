@@ -1,3 +1,9 @@
+.tasksWrapper,
+.tasksContainer {
+  display: flex;
+  align-items: center;
+}
+
 .imgWrapper {
   width: 30px;
 }
@@ -6,18 +12,24 @@
   width: 100%;
 }
 .tasksWrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: 5px 0;
-  border: 2px solid;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: white;
 }
 .tasksContainer {
-  // display: flex;
-
-  // align-items: center;
   min-width: 200px;
 }
 .tasksWrapperTrue {
   text-decoration: line-through;
+}
+.checkbox {
+  margin: 5px;
+}
+.overflowContainer {
+  width: 300px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
