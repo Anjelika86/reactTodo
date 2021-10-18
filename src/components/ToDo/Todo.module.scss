@@ -1,14 +1,37 @@
-.todoContainer {
+.todoContainer,
+.formContainer {
   display: flex;
   flex-direction: column;
+}
+
+.todoContainer {
+  margin: 0 auto;
   align-items: center;
   width: 500px;
   min-height: 300px;
-  border: 2px solid;
+  padding: 20px;
   background-color: aqua;
   font-family: sans-serif;
 }
-.totoHeading {
+.todoWrapper {
+  min-width: 350px;
+}
+.todoHeading {
   font-weight: 700;
+  font-family: Lucida Console, Courier, monospace;
+  font-size: 20px;
   margin: 20px 0;
+}
+
+.btnSubmit,
+.fieldText {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.btnSubmit {
+  margin: 5px 0;
+}
+.btnSubmit:hover {
+  background-color: rgb(14, 163, 156);
 }
